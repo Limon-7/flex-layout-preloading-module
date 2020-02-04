@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="sidenavtoggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>
+    <a routerLink="/home">Home</a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+    <ul fxLayout fxLayoutGap="10px" class="navigation-iteams">
+      <li routerLinkActive="active"><a routerLink="/food">Food</a></li>
+      <li routerLinkActive="active">
+        <a routerLink="/accommodation">Accommodation</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/celebrations">Celebrations</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/lifestyle">Lifestyle</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/offers">Offers</a>
+      </li>
+      <li routerLinkActive="active"><a routerLink="/weddings">Weddings</a></li>
+      <li><a routerLink="/singin">Signin</a></li>
+      <li><a routerLink="/signup">SignUp</a></li>
+    </ul>
+  </div>
+</mat-toolbar>
